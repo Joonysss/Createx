@@ -6,11 +6,7 @@
 
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/nav";
+@import "./components/header-contacts";
 
 // тестовые стили, удалите их
-.page__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--vh);
-}
