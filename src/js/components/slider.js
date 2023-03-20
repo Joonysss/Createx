@@ -26,6 +26,8 @@ const portfolioSlider = new Swiper('.portfolio-section__items', {
   }
 });
 
+
+
 document.querySelector('.potfolio-section__next').addEventListener('click', function() {
   const activeSlide = portSlider.querySelector('.swiper-slide-active');
   const nextActiveSlide = activeSlide.nextElementSibling;
@@ -58,3 +60,12 @@ document.querySelector('.potfolio-section__prev').addEventListener('click', func
  }
 
 })
+
+const testimonialsSlider = new Swiper('.testimonials__items', {
+  slidesPerView: 1,
+  loop: true,
+  navigation: {
+    nextEl: ".testimonials__next",
+    prevEl: ".testimonials__prev"
+  },
+});
