@@ -3,7 +3,7 @@
   <div class="container contacts-section__container">
     <form class="contacts-section__form contacts-form">
       <h3 class="contacts-form__title">A quick way to discuss details</h3>
-      <label class="contacts-form__field form-field">
+      <label class="contacts-form__field form-field form-field--gray">
         <span class="form-field__caption">Name*</span>
         <input
           class="form-field__input"
@@ -13,7 +13,7 @@
           required
         />
       </label>
-      <label class="contacts-form__field form-field">
+      <label class="contacts-form__field form-field form-field--gray">
         <span class="form-field__caption">Phone*</span>
         <input
           class="form-field__input"
@@ -23,7 +23,7 @@
           required
         />
       </label>
-      <label class="contacts-form__field form-field">
+      <label class="contacts-form__field form-field form-field--gray">
         <span class="form-field__caption">Email</span>
         <input
           class="form-field__input"
@@ -32,7 +32,7 @@
           placeholder="Your working email"
         />
       </label>
-      <label class="contacts-form__field form-field">
+      <label class="contacts-form__field form-field form-field--gray">
         <span class="form-field__caption">Message*</span>
         <textarea
           class="form-field__input form-field__input--big"
@@ -40,15 +40,17 @@
           placeholder="Your message"
         ></textarea>
       </label>
-      <label class="custom-chekbox">
+      <label class="custom-checkbox contacts-form__checkbox">
         <input type="checkbox" class="custom-checkbox__input" />
-        <span class="custom-checkbox__caption">
+        <span class="custom-checkbox__text">
           I agree to receive communications from Createx Construction Bureau.
         </span>
       </label>
-      <button class="contacts-form__btn btn btn--fill" type="submit">
-        send request
-      </button>
+      <div class="centered">
+        <button class="contacts-form__btn btn btn--fill" type="submit">
+          send request
+        </button>
+      </div>
     </form>
   </div>
 </section>
