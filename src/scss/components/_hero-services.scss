@@ -1,0 +1,31 @@
+.page-hero {
+  padding-top: 153px;
+  padding-bottom: 179px;
+  background-color: var(--color-athens);
+  background-image: url("../img/page-hero.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  bacground-size: cover;
+  &__breadcrumbs {
+    margin-bottom: 40px;
+  }
+  &__title {
+    max-width: 600px;
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 130%;
+    color: var(--color-ebony);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  &__descr {
+    max-width: 600px;
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--color-storm);
+  }
+}
