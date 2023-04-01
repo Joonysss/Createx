@@ -6,8 +6,9 @@ const gap = parseInt(bodyStyles.getPropertyValue('--grid-gap'));
 const portSlider = document.querySelector('.portfolio-section__items');
 
 
-Swiper.use([Navigation]);
-const portfolioSlider = new Swiper('.portfolio-section__items', {
+if (portSlider) {
+  Swiper.use([Navigation]);
+  const portfolioSlider = new Swiper('.portfolio-section__items', {
   slidesPerView: 3,
   spaceBetween: gap,
   navigation: {
@@ -60,6 +61,7 @@ document.querySelector('.potfolio-section__prev').addEventListener('click', func
  }
 
 })
+}
 
 const testimonialsSlider = new Swiper('.testimonials__items', {
   slidesPerView: 1,
