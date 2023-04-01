@@ -136,6 +136,7 @@ a {
 }
 
 .btn {
+  display: inline-block;
   border-width: 1px;
   border-style: solid;
   border-color: transparent;
@@ -153,6 +154,11 @@ a {
 
   &--stroke-light {
     border-color: var(--color-light);
+    color: var(--color-light);
+  }
+  &--primary {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
   }
 }
 
