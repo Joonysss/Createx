@@ -17,10 +17,8 @@
     transform: translateY(-50%);
   }
   &__item {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
     align-items: center;
-    gap: var(--grid-gap);
+
     &:not(:last-child) {
       margin-bottom: 118px;
     }
