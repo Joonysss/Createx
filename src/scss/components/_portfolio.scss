@@ -22,6 +22,7 @@
     height: 48px;
     color: inherit;
     fill: currentColor;
+    pointer-events: none;
   }
   &__btn {
     @include flex-column-center;
@@ -41,6 +42,7 @@
   &__btn--active {
     background-color: var(--color-primary);
     color: var(--color-light);
+    pointer-events: none;
     .portfolio-tabs-nav__text {
       color: var(--color-light);
     }
@@ -52,12 +54,24 @@
     color: #9a9ca5;
     text-align: center;
     transition: color 0.3s ease-in-out;
+    pointer-events: none;
   }
 }
 
 .portfolio-tabs {
   &__item {
+    display: none;
     grid-column: 4 span;
+    &::nth-child(n + 10) {
+      display: none; //load-more
+    }
+
+    &--visible {
+      display: block;
+    }
+    &--visible-more {
+      display: block !important;
+    }
   }
 }
 
