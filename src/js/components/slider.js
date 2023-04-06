@@ -1,5 +1,5 @@
 
-import Swiper, { Navigation } from 'swiper';
+import Swiper, { Navigation, Thumbs } from 'swiper';
 
 const bodyStyles = window.getComputedStyle(document.body);
 const gap = parseInt(bodyStyles.getPropertyValue('--grid-gap'));
@@ -132,3 +132,29 @@ if (testimonialsSlider) {
     },
   });
 }
+
+
+const workImages = document.querySelector('.work-images-slider');
+
+
+if (workImages) {
+  Swiper.use([Navigation, Thumbs]);
+  const workSlider = new Swiper(".work-images-nav", {
+    spaceBetween: 20,
+    slidesPerView: 10,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  const workSliderNav = new Swiper(workImages, {
+    spaceBetween: 20,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: ".work-images__next",
+      prevEl: ".work-images__prev",
+    },
+    thumbs: {
+      swiper: workSlider,
+    },
+  });
+}
+

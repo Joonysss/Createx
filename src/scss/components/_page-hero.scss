@@ -20,6 +20,15 @@
     letter-spacing: 1px;
     text-transform: uppercase;
   }
+  &__title--small {
+    font-size: 64px;
+    line-height: 120%;
+    letter-spacing: 1px;
+    text-transform: initial;
+  }
+  &__title--mb {
+    margin-bottom: 60px;
+  }
   &__descr {
     max-width: 600px;
     margin: 0;
@@ -36,5 +45,10 @@
   }
   &--work {
     background-image: url("../img/work-bg.png");
+  }
+  &--work-inner {
+    background-color: var(--color-light);
+    background-position: right -8px top 48px;
+    background-image: url("../img/work-hero-inner-bg.png");
   }
 }
