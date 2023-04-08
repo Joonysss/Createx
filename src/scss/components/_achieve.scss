@@ -1,2 +1,37 @@
 .achieve {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  &__item {
+    padding-top: 70px;
+    grid-column: 3 span;
+    text-align: center;
+    background-position: top center;
+    background-size: 48px 48px;
+    background-repeat: no-repeat;
+    &--reccom {
+      background-image: url("../img/about-like.svg");
+    }
+    &--renov {
+      background-image: url("../img/about-renov.svg");
+    }
+    &--spec {
+      background-image: url("../img/about-spec.svg");
+    }
+    &--finish {
+      background-image: url("../img/about-finish.svg");
+    }
+  }
+  &__value {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    color: var(--color-primary);
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--color-ebony);
+  }
 }
