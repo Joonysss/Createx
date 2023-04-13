@@ -158,3 +158,42 @@ if (workImages) {
   });
 }
 
+const historySlider = document.querySelector('.history-slider');
+
+
+if (historySlider) {
+  Swiper.use([Navigation]);
+  const history = new Swiper(historySlider, {
+    spaceBetween: 20,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: ".history__next",
+      prevEl: ".history__prev",
+    },
+  });
+
+  history.on('slideChange', function () {
+    historyBtns.forEach(el => {
+      el.classList.remove('history-nav__btn--active');
+    });
+    document.querySelector(`.history-nav__btn[data-index="${history.activeIndex}"]`).classList.add('history-nav__btn--active');
+    
+  });
+
+  const historyBtns = document.querySelectorAll('.history-nav__btn');
+
+  historyBtns.forEach((el, idx) => {
+    el.setAttribute('data-index', idx);
+    el.addEventListener('click', (e) => {
+      const index = e.currentTarget.dataset.index;
+
+      historyBtns.forEach(el => {
+        el.classList.remove('history-nav__btn--active');
+      });
+      
+      el.classList.add('history-nav__btn--active');
+      history.slideTo(index);
+    })
+  })
+}
+

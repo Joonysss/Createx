@@ -10,6 +10,7 @@
     transform: translate(12px, 4px);
   }
   &__item {
+    overflow: hidden;
     grid-column: 8 span;
   }
   &__image {
