@@ -4,9 +4,26 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 102px;
+    column-gap: 102px;
+    row-gap: 40px;
   }
   &__title {
     margin-bottom: 60px;
+  }
+
+  &--about {
+    background-color: var(--color-light);
+    .partners__title {
+      margin-bottom: 25px;
+    }
+  }
+  &__descr {
+    margin: 0;
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--color-storm);
+    text-align: center;
   }
 }
